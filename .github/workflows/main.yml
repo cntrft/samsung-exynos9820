@@ -26,7 +26,7 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="cntrft♡FUE3"         \
+                       name="cntrftFUE3"         \
                        toolchain=$TOOLCHAIN      \
                        +magisk                   \
                        +nohardening              \
@@ -39,7 +39,6 @@ jobs:
                        -morosound                \
                        +boeffla_wl_blocker       \
                        +1000hz \
-                       +fp_boost \
                        +noatime \
                        +io_anxiety \
                        +tcp_bbr \
