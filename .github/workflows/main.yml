@@ -26,7 +26,7 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="cntrftFUE3"         \
+                       name="+♡cruelFUE3♡"         \
                        toolchain=$TOOLCHAIN      \
                        +magisk                   \
                        +nohardening              \
@@ -36,9 +36,9 @@ jobs:
                        +sdfat                    \
                        +ntfs                     \
                        +force_dex_wqhd           \
-                       -morosound                \
+                       +morosound                \
                        +boeffla_wl_blocker       \
-                       +1000hz \
+                       +300hz \
                        +noatime \
                        +io_anxiety \
                        +tcp_bbr \
@@ -48,8 +48,11 @@ jobs:
                        +noksm \
                        +nomodules \
                        +noaudit \
-                       +noswap \
                        +fake_config \
+                       +fp_boost \
+                       +lto \
+                       +polly \
+                       +graphite \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
