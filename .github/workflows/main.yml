@@ -51,6 +51,7 @@ jobs:
                        +fake_config \
                        +fp_boost \
                        +graphite \
+                       +lto \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
