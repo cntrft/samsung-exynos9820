@@ -51,7 +51,6 @@ jobs:
                        +fake_config \
                        +fp_boost \
                        +graphite \
-                       +lto \
                        +noswap \
                        +nozram \
           2>&1 | tee config.info
