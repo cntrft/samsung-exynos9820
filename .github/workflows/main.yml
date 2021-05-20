@@ -50,7 +50,6 @@ jobs:
                        +noaudit \
                        +fake_config \
                        +fp_boost \
-                       +polly \
                        +graphite \
           2>&1 | tee config.info
 
