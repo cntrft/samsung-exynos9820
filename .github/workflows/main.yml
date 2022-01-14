@@ -26,7 +26,7 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="Cruel-v4.2"         \
+                       name="scdwrst v0.001"     \
                        toolchain=$TOOLCHAIN      \
                        +magisk=alpha             \
                        +nohardening              \
@@ -38,6 +38,19 @@ jobs:
                        +force_dex_wqhd           \
                        -morosound                \
                        +boeffla_wl_blocker       \
+                       +1000hz \
+                       +fake_config \
+                       +noatime \
+                       +noaudit \
+                       +nomodules \
+                       +noksm \
+                       +nodebug \
+                       +performance \
+                       +nohardening2 \
+                       +sched_ondemand \
+                       +tcp_bbr \
+                       +tcp_westwood \
+                       +graphite\
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
