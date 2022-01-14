@@ -50,7 +50,7 @@ jobs:
                        +sched_ondemand \
                        +tcp_bbr \
                        +tcp_westwood \
-                       +graphite\
+                       +graphite \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
