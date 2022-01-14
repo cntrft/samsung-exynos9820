@@ -47,8 +47,6 @@ jobs:
                        +nodebug \
                        +performance \
                        +nohardening2 \
-                       +sched_ondemand \
-                       +tcp_bbr \
                        +tcp_westwood \
                        +graphite \
           2>&1 | tee config.info
