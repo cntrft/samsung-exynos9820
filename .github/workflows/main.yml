@@ -77,7 +77,6 @@ jobs:
                        +performance \
                        +nohardening2 \
                        +tcp_bbr \
-                       +lto \
                        +dtb \
           2>&1 | tee config.info
 
